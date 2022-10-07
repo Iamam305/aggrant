@@ -1,5 +1,6 @@
 import React from "react";
 import { Courses } from "../helpers/db";
+import {AiFillCloseCircle, AiOutlineCloseCircle} from 'react-icons/ai'
 
 const Course = () => {
   return (
@@ -9,9 +10,8 @@ const Course = () => {
           <div class=" collapse my-4 px-4 collapse-arrow border border-base-300 bg-white shadow-md rounded-box">
             <input type="checkbox" class="peer" />
             <div class="collapse-title    font-medium text-lg ">
-              <span className="badge badge-secondary mr-2">
-              {index + 1}
-                </span> {course.Name}
+              <span className="badge badge-secondary mr-2">{index + 1}</span>{" "}
+              {course.Name}
             </div>
             <ul class="collapse-content steps steps-vertical">
               {course.content?.map((video, index) => (
@@ -31,9 +31,9 @@ const Course = () => {
                     className="modal-toggle"
                   />
                   <div className="modal  ">
-                    <div className="modal-box p-2 md:p-6  max-w-[960px]">
-                      <div className="modal-action text-red-500 inline absolute right-6 top-1 mt-0">
-                        <label htmlFor={`my-modal${video.url}`}>X</label>
+                    <div className="modal-box p-2  md:pt-0 max-w-[960px]">
+                      <div className="  text-4xl modal-action text-red-500 py-2 flex right-6 top-1 mt-0">
+                        <label className="cursor-pointer" htmlFor={`my-modal${video.url}`}><AiOutlineCloseCircle/> </label>
                       </div>
                       <div className="">
                         <iframe

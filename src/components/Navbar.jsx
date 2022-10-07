@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <div class="navbar bg-base-100 mx-auto justify-center">
+    <div class="navbar shadow-md bg-base-100 mx-auto justify-center">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -56,19 +56,37 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link to={'/'} class="btn btn-ghost normal-case text-xl">AGGRANT</Link>
+        <Link to={"/"} class="btn btn-ghost normal-case text-xl">
+          AGGRANT
+        </Link>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="flex justify-between horizontal p-0">
           <li>
-            <Link className="mx-2 px-2 hover:text-indigo-700 font-semibold font-mono" to={"/"}>Home</Link>
+            <Link
+              className="mx-2 px-2 hover:text-indigo-700 font-semibold font-mono"
+              to={"/"}
+            >
+              Home
+            </Link>
           </li>
 
           <li>
-            <Link className="mx-2 px-2 hover:text-indigo-700 font-semibold font-mono" to={"/course"}>Courses</Link>
+            <Link
+              className="mx-2 px-2 hover:text-indigo-700 font-semibold font-mono"
+              to={"/course"}
+            >
+              Courses
+            </Link>
           </li>
           <li>
-            <a className="mx-2 px-2 hover:text-indigo-700 font-semibold font-mono" href={"https://github.com/Iamam305/aggrant"}>Github</a>
+            <a
+              className="mx-2 px-2 hover:text-indigo-700 font-semibold font-mono"
+              href={"https://github.com/Iamam305/aggrant"}
+              target={"_blank"}
+            >
+              Github
+            </a>
           </li>
         </ul>
       </div>
