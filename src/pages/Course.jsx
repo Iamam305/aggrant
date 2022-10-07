@@ -30,7 +30,7 @@ const Course = () => {
                     id={`my-modal${video.url}`}
                     className="modal-toggle"
                   />
-                  <div className="modal  ">
+                  <div className="modal w-screen ">
                     <div className="modal-box p-2  md:pt-0 max-w-[960px]">
                       <div className="  text-4xl modal-action text-red-500 py-2 flex right-6 top-1 mt-0">
                         <label className="cursor-pointer" htmlFor={`my-modal${video.url}`}><AiOutlineCloseCircle/> </label>

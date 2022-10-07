@@ -68,9 +68,25 @@ export const Courses = [
                 url:"https://www.youtube.com/embed/qXulbm0SWpc"
             },
             {
-                name: "Javascript DOM manupulation",
-                url:'"https://www.youtube.com/embed/4sQaUNDZq3w'
-            }
+                name: "Javascript DOM manipulation",
+                url:'https://www.youtube.com/embed/4sQaUNDZq3w'
+            },
+            {
+                name:"Build tic tac toe using html css and javascript (Project)",
+                url:"https://www.youtube.com/embed/sSLGP-_2gOI"
+            },
+            {
+                name:"Build Calculator using html css and javascript (Project)",
+                url:"https://www.youtube.com/embed/TXCj39dGLlY"
+            },
+            {
+                name:"Map, Reduce & Filter Functions in JavaScript",
+                url:'https://www.youtube.com/embed/cAXyP9SBFIk'
+            },
+            {
+                name: "Asynchronous javascript",
+                url:'https://www.youtube.com/embed/bWaucYA1YRI'
+            },
         ]
     }
 
