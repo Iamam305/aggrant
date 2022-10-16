@@ -6,8 +6,31 @@ const SingleTopic = ({ topic }) => {
 
   const iframeVideo = useRef()
 
+  
+
+
   useEffect(() => {
-   console.log(iframeVideo)
+    if (!showPopup ) {
+       
+        var player;
+
+        // this function gets called when API is ready to use
+        function onYouTubePlayerAPIReady() {
+            // create the global player from the specific iframe (#video)
+            player = new YT.Player('video', {
+                events: {
+                    // call this function when player is ready to use
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+        
+        function onPlayerReady(event) {
+        
+            player.stopVideo();
+        }
+       
+    }
   }, [showPopup])
   
   return (
@@ -29,7 +52,7 @@ const SingleTopic = ({ topic }) => {
           className="modal-toggle"
         />
 
-        {showPopup? (
+        { (
           <div className="modal  w-screen ">
             <div className="modal-box p-2  md:pt-0 max-w-[960px]">
               <div className="  text-4xl modal-action text-red-500 py-2 flex right-6 top-1 mt-0">
@@ -50,11 +73,12 @@ const SingleTopic = ({ topic }) => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   ref={iframeVideo}
+                  allowscriptaccess="always"
                 ></iframe>
               </div>
             </div>
           </div>
-        ): ''}
+        )}
       </>
     
   );
