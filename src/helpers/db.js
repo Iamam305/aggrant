@@ -87,6 +87,11 @@ export const Courses = [
                 name: "Asynchronous javascript",
                 url:'https://www.youtube.com/embed/bWaucYA1YRI'
             },
+
+            {
+                name: "Javascript ECMAScript 6 (ES6)",
+                url:'https://www.youtube.com/embed/O-rzja-2OPk'
+            },
         ]
     }
 
