@@ -93,6 +93,24 @@ export const Courses = [
                 url:'https://www.youtube.com/embed/O-rzja-2OPk'
             },
         ]
+    }, 
+    {
+        Name: 'Github and version control system',
+        content: [
+            {
+                name: 'Git Tutorial: How to Upload your Projects to Git & GitHub',
+                url: 'https://www.youtube.com/embed/G14WMD8Kg3U'
+            }
+        ]
+    },
+
+    {
+        Name: "React",
+        content:[
+            {
+                name:''
+            }
+        ]
     }
 
 ]
